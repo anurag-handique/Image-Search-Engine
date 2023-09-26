@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Search Engine</h1>
+    <div class="container">
+        <p>Night mode</p>
+        <div class="ToggleSwitch" onclick="toggleSwitch()">
+            <div class="state"></div>
+            <div class="On">On</div>
+            <div class="Off">Off</div>
+        </div>
+    </div>
+    <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search images here">
+        <button type="submit">Search</button>
+    </form>
+    <div id="search-result"></div>
+    <button id="show-more-btn">Show more</button>
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
